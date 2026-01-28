@@ -43,6 +43,8 @@ chunk_cache.sqlite
 bm25_index_v2.pkl
 
 chroma_db_v2/
+mdeberta_v3_medical_nli_v2/
+node_modules/
 
 
 # Logs

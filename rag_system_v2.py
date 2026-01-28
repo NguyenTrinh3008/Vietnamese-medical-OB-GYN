@@ -52,7 +52,7 @@ COLLECTION = "medical_docs_v2"          # NEW: V2 collection
 BM25_INDEX_PATH = "bm25_index_v2.pkl"   # NEW: V2 BM25
 EMBED_MODEL = "dangvantuan/vietnamese-document-embedding"
 RERANK_MODEL = "namdp-ptit/ViRanker"
-NLI_MODEL_PATH = "./mdeberta_v3_medical_nli_v2"
+NLI_MODEL_PATH = "NguyenTrinh/mdeberta-v3-medical-nli-vietnamese"  # HuggingFace model - auto-download
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
 # Hyperparameters V2 - More chunks since they're smaller

@@ -441,8 +441,8 @@ Return JSON: {"claims": [...]}"""
 if __name__ == "__main__":
     from sentence_transformers import CrossEncoder
     
-    print("Loading mDeBERTa-v3 NLI model...")
-    nli_model = CrossEncoder("./mdeberta_v3_medical_nli_v2", device="cuda")
+    print("Loading mDeBERTa-v3 NLI model from HuggingFace...")
+    nli_model = CrossEncoder("NguyenTrinh/mdeberta-v3-medical-nli-vietnamese", device="cuda")
     
     grader = NLIHallucinationGraderV2(nli_model, verbose=True)
     
