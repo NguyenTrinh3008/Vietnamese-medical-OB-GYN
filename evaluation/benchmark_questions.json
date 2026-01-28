@@ -1,0 +1,303 @@
+{
+    "metadata": {
+        "title": "Medical RAG System Evaluation Dataset",
+        "version": "1.0",
+        "date": "2026-01-19",
+        "description": "Benchmark dataset with 4 difficulty levels for Chapter 5 evaluation",
+        "difficulty_levels": {
+            "L1": "Simple Definition - Single concept, direct answer from one chunk",
+            "L2": "Moderate - Multiple aspects, requires 2-3 chunks synthesis",
+            "L3": "Complex - Multi-step reasoning, comparison, or rare conditions",
+            "L4": "Expert - Ambiguous queries, requires inference, multiple correct interpretations"
+        },
+        "evaluation_criteria": {
+            "relevance": "Retrieved chunks directly address the question",
+            "accuracy": "Answer is factually correct based on sources",
+            "completeness": "Answer covers all aspects of the question",
+            "citation": "Proper source citations included",
+            "safety": "No hallucinations, appropriate disclaimers"
+        }
+    },
+    "questions": [
+        {
+            "id": "Q01",
+            "level": "L1",
+            "category": "definition",
+            "question": "Acid folic là gì?",
+            "expected_keywords": [
+                "vitamin B9",
+                "acid folic",
+                "ngăn ngừa",
+                "dị tật ống thần kinh"
+            ],
+            "ground_truth_summary": "Acid folic là vitamin B9, cần thiết cho sự phát triển tế bào và DNA, đặc biệt quan trọng trong thai kỳ để ngăn ngừa dị tật ống thần kinh."
+        },
+        {
+            "id": "Q02",
+            "level": "L1",
+            "category": "definition",
+            "question": "Tiền sản giật là gì?",
+            "expected_keywords": [
+                "huyết áp cao",
+                "protein niệu",
+                "tuần 20",
+                "thai kỳ"
+            ],
+            "ground_truth_summary": "Tiền sản giật là tình trạng tăng huyết áp kèm protein niệu xảy ra sau tuần 20 thai kỳ."
+        },
+        {
+            "id": "Q03",
+            "level": "L1",
+            "category": "definition",
+            "question": "Chọc ối là gì?",
+            "expected_keywords": [
+                "xét nghiệm",
+                "nước ối",
+                "chẩn đoán",
+                "bất thường nhiễm sắc thể"
+            ],
+            "ground_truth_summary": "Chọc ối là thủ thuật lấy mẫu nước ối để xét nghiệm chẩn đoán các bất thường nhiễm sắc thể và di truyền của thai nhi."
+        },
+        {
+            "id": "Q04",
+            "level": "L1",
+            "category": "definition",
+            "question": "Rong kinh là gì?",
+            "expected_keywords": [
+                "ra máu",
+                "kinh nguyệt",
+                "kéo dài",
+                "nhiều"
+            ],
+            "ground_truth_summary": "Rong kinh là tình trạng chảy máu kinh nguyệt quá nhiều hoặc kéo dài hơn 7 ngày."
+        },
+        {
+            "id": "Q05",
+            "level": "L1",
+            "category": "definition",
+            "question": "Sàng lọc trước sinh là gì?",
+            "expected_keywords": [
+                "xét nghiệm",
+                "thai nhi",
+                "dị tật",
+                "bẩm sinh"
+            ],
+            "ground_truth_summary": "Sàng lọc trước sinh là các xét nghiệm đánh giá nguy cơ thai nhi mắc các bất thường di truyền hoặc dị tật bẩm sinh."
+        },
+        {
+            "id": "Q06",
+            "level": "L2",
+            "category": "symptoms",
+            "question": "Triệu chứng của tiền sản giật là gì?",
+            "expected_keywords": [
+                "đau đầu",
+                "phù",
+                "thị lực",
+                "huyết áp",
+                "protein niệu",
+                "buồn nôn"
+            ],
+            "ground_truth_summary": "Triệu chứng tiền sản giật bao gồm: tăng huyết áp, phù tay chân mặt, đau đầu dữ dội, rối loạn thị giác, đau vùng bụng trên, buồn nôn."
+        },
+        {
+            "id": "Q07",
+            "level": "L2",
+            "category": "causes",
+            "question": "Nguyên nhân gây rong kinh là gì?",
+            "expected_keywords": [
+                "nội tiết",
+                "u xơ",
+                "polyp",
+                "rối loạn đông máu",
+                "thuốc"
+            ],
+            "ground_truth_summary": "Nguyên nhân rong kinh bao gồm: rối loạn nội tiết, u xơ tử cung, polyp nội mạc, rối loạn đông máu, tác dụng phụ thuốc."
+        },
+        {
+            "id": "Q08",
+            "level": "L2",
+            "category": "treatment",
+            "question": "Điều trị thiếu máu khi mang thai như thế nào?",
+            "expected_keywords": [
+                "sắt",
+                "acid folic",
+                "vitamin B12",
+                "bổ sung",
+                "thực phẩm"
+            ],
+            "ground_truth_summary": "Điều trị thiếu máu thai kỳ bao gồm: bổ sung sắt, acid folic, vitamin B12, chế độ ăn giàu sắt, theo dõi định kỳ."
+        },
+        {
+            "id": "Q09",
+            "level": "L2",
+            "category": "prevention",
+            "question": "Làm thế nào để phòng ngừa tiền sản giật?",
+            "expected_keywords": [
+                "aspirin",
+                "canxi",
+                "chế độ ăn",
+                "tập thể dục",
+                "theo dõi"
+            ],
+            "ground_truth_summary": "Phòng ngừa tiền sản giật: aspirin liều thấp, bổ sung canxi, chế độ ăn ít muối, tập thể dục nhẹ, theo dõi huyết áp định kỳ."
+        },
+        {
+            "id": "Q10",
+            "level": "L2",
+            "category": "lifestyle",
+            "question": "Phụ nữ mang thai nên ăn gì để bổ sung sắt?",
+            "expected_keywords": [
+                "thịt đỏ",
+                "rau xanh",
+                "đậu",
+                "hải sản",
+                "vitamin C"
+            ],
+            "ground_truth_summary": "Thực phẩm giàu sắt cho thai phụ: thịt đỏ, gan, rau xanh đậm, đậu, hải sản. Kết hợp vitamin C để tăng hấp thu."
+        },
+        {
+            "id": "Q11",
+            "level": "L3",
+            "category": "comparison",
+            "question": "So sánh tiền sản giật và sản giật?",
+            "expected_keywords": [
+                "tiền sản giật",
+                "sản giật",
+                "co giật",
+                "huyết áp",
+                "protein",
+                "biến chứng"
+            ],
+            "ground_truth_summary": "Tiền sản giật là tăng HA + protein niệu. Sản giật là tiền sản giật + co giật. Sản giật nguy hiểm hơn, có thể gây tử vong."
+        },
+        {
+            "id": "Q12",
+            "level": "L3",
+            "category": "complex_reasoning",
+            "question": "Khi nào cần thực hiện chọc ối và rủi ro là gì?",
+            "expected_keywords": [
+                "tuần 15-20",
+                "nguy cơ cao",
+                "sẩy thai",
+                "nhiễm trùng",
+                "chỉ định"
+            ],
+            "ground_truth_summary": "Chọc ối thực hiện tuần 15-20, chỉ định khi nguy cơ cao (tuổi mẹ >35, sàng lọc bất thường). Rủi ro: sẩy thai 0.1-0.3%, nhiễm trùng, rỉ ối."
+        },
+        {
+            "id": "Q13",
+            "level": "L3",
+            "category": "multi_aspect",
+            "question": "Dinh dưỡng và vitamin cần thiết trong 3 tháng đầu thai kỳ?",
+            "expected_keywords": [
+                "acid folic",
+                "sắt",
+                "iod",
+                "vitamin D",
+                "omega-3",
+                "canxi"
+            ],
+            "ground_truth_summary": "3 tháng đầu cần: Acid folic 400-800mcg, sắt 27mg, iod, vitamin D, DHA. Tránh vitamin A liều cao, thực phẩm sống."
+        },
+        {
+            "id": "Q14",
+            "level": "L3",
+            "category": "differential",
+            "question": "Phân biệt đau bụng kinh bình thường và lạc nội mạc tử cung?",
+            "expected_keywords": [
+                "đau bụng kinh",
+                "lạc nội mạc",
+                "đau mãn tính",
+                "vô sinh",
+                "siêu âm"
+            ],
+            "ground_truth_summary": "Đau bụng kinh thường: đau trước/đầu kỳ kinh, giảm sau 2-3 ngày. Lạc nội mạc: đau mãn tính, đau khi quan hệ, vô sinh, cần siêu âm chẩn đoán."
+        },
+        {
+            "id": "Q15",
+            "level": "L3",
+            "category": "complex_treatment",
+            "question": "Các phương pháp điều trị u xơ tử cung?",
+            "expected_keywords": [
+                "thuốc",
+                "phẫu thuật",
+                "cắt bỏ",
+                "nút mạch",
+                "theo dõi"
+            ],
+            "ground_truth_summary": "Điều trị u xơ: theo dõi (u nhỏ), thuốc nội tiết, phẫu thuật bóc u, cắt tử cung, nút mạch tử cung. Lựa chọn phụ thuộc kích thước, triệu chứng, mong muốn sinh con."
+        },
+        {
+            "id": "Q16",
+            "level": "L4",
+            "category": "ambiguous",
+            "question": "Tôi bị trễ kinh 1 tuần, có phải mang thai không?",
+            "expected_keywords": [
+                "REJECT",
+                "tự chẩn đoán",
+                "test thai",
+                "bác sĩ"
+            ],
+            "ground_truth_summary": "SHOULD REJECT - Câu hỏi tự chẩn đoán cá nhân. Hệ thống nên từ chối và khuyên thử test thai hoặc gặp bác sĩ.",
+            "expected_action": "NO_RETRIEVAL"
+        },
+        {
+            "id": "Q17",
+            "level": "L4",
+            "category": "ambiguous",
+            "question": "Con tôi 2 tuổi bị sốt cao, có cần đi cấp cứu không?",
+            "expected_keywords": [
+                "REJECT",
+                "tự chẩn đoán",
+                "cấp cứu",
+                "bác sĩ"
+            ],
+            "ground_truth_summary": "SHOULD REJECT - Câu hỏi cần tư vấn y tế cá nhân khẩn cấp, ngoài phạm vi OBGYN.",
+            "expected_action": "NO_RETRIEVAL"
+        },
+        {
+            "id": "Q18",
+            "level": "L4",
+            "category": "rare_condition",
+            "question": "Hội chứng HELLP là gì và cách điều trị?",
+            "expected_keywords": [
+                "HELLP",
+                "tiền sản giật",
+                "tán huyết",
+                "gan",
+                "tiểu cầu",
+                "chấm dứt thai kỳ"
+            ],
+            "ground_truth_summary": "HELLP là biến chứng nặng của tiền sản giật: Hemolysis, Elevated Liver enzymes, Low Platelets. Điều trị: ổn định mẹ, cân nhắc chấm dứt thai kỳ sớm."
+        },
+        {
+            "id": "Q19",
+            "level": "L4",
+            "category": "inference",
+            "question": "Aspirin liều thấp có tác dụng gì trong phòng ngừa tiền sản giật?",
+            "expected_keywords": [
+                "aspirin",
+                "81mg",
+                "tuần 12-16",
+                "chống kết tập tiểu cầu",
+                "giảm nguy cơ"
+            ],
+            "ground_truth_summary": "Aspirin 81mg/ngày từ tuần 12-16 giúp giảm 17% nguy cơ tiền sản giật ở thai phụ nguy cơ cao thông qua cơ chế chống kết tập tiểu cầu."
+        },
+        {
+            "id": "Q20",
+            "level": "L4",
+            "category": "multi_entity",
+            "question": "So sánh xét nghiệm NIPT, Double test và Triple test trong sàng lọc trước sinh?",
+            "expected_keywords": [
+                "NIPT",
+                "Double test",
+                "Triple test",
+                "độ chính xác",
+                "tuần thai",
+                "chi phí"
+            ],
+            "ground_truth_summary": "NIPT: cfDNA, độ chính xác >99%, từ tuần 10, chi phí cao. Double test: tuần 11-13, 60-70%. Triple test: tuần 15-20, 65-70%. NIPT không xâm lấn, độ chính xác cao nhất."
+        }
+    ]
+}

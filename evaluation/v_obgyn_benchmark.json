@@ -1,0 +1,480 @@
+{
+    "metadata": {
+        "name": "V-OBGYN-50",
+        "description": "Benchmark dataset for Vietnamese OB/GYN RAG System Evaluation",
+        "version": "2.0",
+        "date": "2026-01-19",
+        "levels": {
+            "L1": "Factual Retrieval - Entity extraction, keyword matching",
+            "L2": "Synthesis & Inference - Multi-hop reasoning, comparison",
+            "L3": "Adversarial - Missing info detection, negation handling"
+        }
+    },
+    "questions": [
+        {
+            "id": "1.01",
+            "level": "L1",
+            "category": "prenatal_screening",
+            "question": "Mục đích chính của thủ thuật chọc dò màng ối (amniocentesis) là gì?",
+            "expected_answer": "Thu thập dịch ối và các tế bào để xác định rối loạn di truyền, tình trạng nhiễm trùng hoặc sự phát triển bất thường của phổi.",
+            "analysis": "Truy vấn định nghĩa. Cần trích xuất chính xác 3 mục đích: di truyền, nhiễm trùng, phổi.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.02",
+            "level": "L1",
+            "category": "prenatal_screening",
+            "question": "Chọc dò màng ối thường được thực hiện trong khoảng thời gian nào của thai kỳ?",
+            "expected_answer": "Từ tuần thứ 15 đến tuần thứ 20.",
+            "analysis": "Dữ liệu số học chính xác. Tuần 15-20 là mốc chuẩn.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.03",
+            "level": "L1",
+            "category": "prenatal_screening",
+            "question": "Xét nghiệm sàng lọc bộ ba (Triple Screen) đo lường nồng độ của ba chất nào trong máu mẹ?",
+            "expected_answer": "AFP (Alpha-fetoprotein), hCG (Human chorionic gonadotropin), và Estriol.",
+            "analysis": "Liệt kê thực thể. Phải đủ 3 chất: AFP, hCG, Estriol.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.04",
+            "level": "L1",
+            "category": "prenatal_screening",
+            "question": "Phụ nữ thuộc nhóm tuổi nào được khuyến khích mạnh mẽ thực hiện xét nghiệm sàng lọc quý I?",
+            "expected_answer": "Phụ nữ từ 35 tuổi trở lên.",
+            "analysis": "Ngưỡng giá trị. Con số 35 tuổi là bắt buộc.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.05",
+            "level": "L1",
+            "category": "prenatal_screening",
+            "question": "Tỷ lệ sảy thai liên quan đến thủ thuật chọc ối được nêu trong tài liệu là bao nhiêu?",
+            "expected_answer": "Khoảng 1 trên 900 ca.",
+            "analysis": "Số liệu thống kê cụ thể từ nguồn (1/900). Không chấp nhận số liệu cũ (1/200).",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.06",
+            "level": "L1",
+            "category": "nutrition",
+            "question": "Hãy liệt kê 5 nhóm thực phẩm thiết yếu trong thai kỳ.",
+            "expected_answer": "Ngũ cốc, Trái cây, Rau, Thực phẩm giàu protein, và Thực phẩm từ sữa.",
+            "analysis": "Liệt kê danh sách. Không đưa chất béo/dầu vào nhóm thiết yếu chính.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.07",
+            "level": "L1",
+            "category": "nutrition",
+            "question": "Trong tam cá nguyệt thứ hai, thai phụ cần bổ sung thêm khoảng bao nhiêu calo mỗi ngày?",
+            "expected_answer": "340 calo.",
+            "analysis": "Số liệu calo cụ thể (+340).",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.08",
+            "level": "L1",
+            "category": "nutrition",
+            "question": "Theo khuyến cáo, mỗi viên uống bổ sung hàng ngày nên chứa bao nhiêu mcg acid folic?",
+            "expected_answer": "400mcg.",
+            "analysis": "Đơn vị đo lường (mcg). Cảnh báo nhầm lẫn với mg.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.09",
+            "level": "L1",
+            "category": "nutrition",
+            "question": "Yêu cầu an toàn thực phẩm quan trọng nhất đối với các sản phẩm từ sữa cho bà bầu là gì?",
+            "expected_answer": "Phải được tiệt trùng (pasteurized).",
+            "analysis": "Từ khóa chốt: 'tiệt trùng' hoặc 'pasteurized'.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.10",
+            "level": "L1",
+            "category": "genetics",
+            "question": "Bệnh hồng cầu hình liềm (Sickle Cell Disease) gây ra bởi sự bất thường của protein nào?",
+            "expected_answer": "Hemoglobin.",
+            "analysis": "Trích xuất tên protein: Hemoglobin.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.11",
+            "level": "L1",
+            "category": "vaccination",
+            "question": "Vắc-xin cúm mùa có được coi là an toàn cho phụ nữ mang thai không?",
+            "expected_answer": "Có, vắc-xin cúm mùa được đánh giá là AN TOÀN và được khuyến cáo.",
+            "analysis": "Khẳng định tính an toàn (Có/An toàn).",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.12",
+            "level": "L1",
+            "category": "gestational_diabetes",
+            "question": "Đái tháo đường thai kỳ thường được sàng lọc và chẩn đoán trong khoảng tuần thai nào?",
+            "expected_answer": "Từ tuần 24 đến tuần 28.",
+            "analysis": "Mốc thời gian sàng lọc chuẩn: 24-28 tuần.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.13",
+            "level": "L1",
+            "category": "preeclampsia",
+            "question": "Ba triệu chứng đặc trưng của tiền sản giật là gì?",
+            "expected_answer": "Huyết áp cao, Protein niệu (đạm trong nước tiểu), và Phù.",
+            "analysis": "Liệt kê đủ bộ ba: HA cao, Protein niệu, Phù.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.14",
+            "level": "L1",
+            "category": "genetics",
+            "question": "Người lành mang gen (Carrier) được định nghĩa như thế nào trong ngữ cảnh bệnh Thalassemia?",
+            "expected_answer": "Là người thừa hưởng một bản sao gen bình thường và một bản sao gen bị biến đổi (đột biến), thường không có triệu chứng bệnh.",
+            "analysis": "Định nghĩa: 1 gen lặn bệnh + 1 gen trội lành.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "1.15",
+            "level": "L1",
+            "category": "exercise",
+            "question": "Dấu hiệu duy nhất được nêu trong tài liệu yêu cầu phụ nữ ngừng tập thể dục ngay lập tức là gì?",
+            "expected_answer": "Đau (Pain).",
+            "analysis": "Trích xuất chính xác từ 'Đau' theo tài liệu.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.16",
+            "level": "L2",
+            "category": "genetics",
+            "question": "Nếu cả cha và mẹ đều là người lành mang gen Thalassemia, xác suất sinh con mắc bệnh là bao nhiêu phần trăm?",
+            "expected_answer": "25% (hoặc 1 trên 4).",
+            "analysis": "Tính toán di truyền đơn giản: Ca x Ca -> 25% bệnh.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.17",
+            "level": "L2",
+            "category": "genetics",
+            "question": "Nguy cơ sinh con mắc bệnh Thalassemia thay đổi như thế nào nếu chỉ có một trong hai người (bố hoặc mẹ) mang gen bệnh?",
+            "expected_answer": "Nguy cơ trẻ mắc bệnh là rất thấp.",
+            "analysis": "Đánh giá định tính: 'Rất thấp'. Không bịa số liệu.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.18",
+            "level": "L2",
+            "category": "nutrition",
+            "question": "Việc bổ sung kết hợp sắt và acid folic có tác dụng kép gì đối với sức khỏe của mẹ và thai nhi?",
+            "expected_answer": "Phòng thiếu máu (cho mẹ) và giảm nguy cơ dị tật (cho con).",
+            "analysis": "Tổng hợp tác dụng: Mẹ (thiếu máu) + Con (dị tật).",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.19",
+            "level": "L2",
+            "category": "prenatal_screening",
+            "question": "So sánh rủi ro sảy thai giữa thủ thuật chọc ối và sinh thiết gai nhau (CVS).",
+            "expected_answer": "CVS có nguy cơ sảy thai cao hơn (1/455) so với chọc ối (1/900).",
+            "analysis": "So sánh rủi ro: CVS > Chọc ối.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.20",
+            "level": "L2",
+            "category": "prenatal_screening",
+            "question": "Tại sao một thai phụ có thể chấp nhận rủi ro cao hơn của CVS thay vì chờ chọc ối?",
+            "expected_answer": "Vì CVS thực hiện được sớm hơn (tuần 10-13), giúp thai phụ có nhiều thời gian hơn để đưa ra quyết định.",
+            "analysis": "Suy luận động cơ: Lợi ích chẩn đoán sớm.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.21",
+            "level": "L2",
+            "category": "vaccination",
+            "question": "Tại sao khoảng thời gian từ tuần 27 đến 36 được coi là cửa sổ vàng để tiêm vắc-xin Tdap?",
+            "expected_answer": "Để tối ưu hóa việc chuyển kháng thể bảo vệ từ mẹ sang con, giúp bảo vệ em bé khỏi bệnh ho gà sau khi sinh.",
+            "analysis": "Cơ chế miễn dịch: Chuyển kháng thể mẹ -> con.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.22",
+            "level": "L2",
+            "category": "preeclampsia",
+            "question": "Dựa trên thời điểm khởi phát, làm thế nào để phân biệt tiền sản giật với tăng huyết áp mãn tính?",
+            "expected_answer": "Tiền sản giật thường khởi phát sau tuần thứ 20 của thai kỳ ở những người trước đó có huyết áp bình thường.",
+            "analysis": "Phân biệt lâm sàng: Mốc 'sau tuần 20'.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.23",
+            "level": "L2",
+            "category": "preeclampsia",
+            "question": "Tại sao protein niệu lại là một chỉ số quan trọng trong chẩn đoán tiền sản giật?",
+            "expected_answer": "Vì nó phản ánh tổn thương thận do co thắt mạch máu toàn thân, phân biệt với tăng huyết áp đơn thuần.",
+            "analysis": "Suy luận bệnh học: Tổn thương cơ quan đích (thận).",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.24",
+            "level": "L2",
+            "category": "gestational_diabetes",
+            "question": "Nếu mẹ bị đái tháo đường thai kỳ, thai nhi có nguy cơ gì đặc biệt về cân nặng?",
+            "expected_answer": "Thai nhi có nguy cơ phát triển quá mức (thai to), gây khó khăn khi sinh (kẹt vai).",
+            "analysis": "Hệ quả: Thai to (macrosomia).",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.25",
+            "level": "L2",
+            "category": "vaccination",
+            "question": "Sự khác biệt chính về khuyến cáo tiêm vắc-xin cúm dạng tiêm (IIV) và dạng xịt mũi (LAIV) cho bà bầu là gì?",
+            "expected_answer": "Dạng tiêm (IIV) được khuyến cáo (an toàn), trong khi dạng xịt mũi (LAIV) là vắc-xin sống giảm độc lực và KHÔNG được dùng cho phụ nữ mang thai.",
+            "analysis": "So sánh chống chỉ định: Tiêm (OK) vs Xịt (Cấm).",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.26",
+            "level": "L2",
+            "category": "preeclampsia",
+            "question": "Tiền sản giật đóng vai trò gì trong tiến trình bệnh lý dẫn đến sản giật?",
+            "expected_answer": "Là giai đoạn cảnh báo trước; tiền sản giật nếu tiến triển nặng và không được kiểm soát sẽ dẫn đến cơn co giật toàn thể gọi là sản giật.",
+            "analysis": "Mối quan hệ nhân quả/tiến triển.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.27",
+            "level": "L2",
+            "category": "gestational_diabetes",
+            "question": "Ngay cả khi đường huyết trở về bình thường sau sinh, người mẹ từng mắc đái tháo đường thai kỳ vẫn đối mặt với nguy cơ dài hạn nào?",
+            "expected_answer": "Tăng nguy cơ phát triển đái tháo đường type 2 trong tương lai.",
+            "analysis": "Tiên lượng dài hạn.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.28",
+            "level": "L2",
+            "category": "prenatal_screening",
+            "question": "Tại sao kết quả Triple Screen chỉ được coi là ước tính nguy cơ trong khi kết quả chọc ối được coi là chẩn đoán?",
+            "expected_answer": "Triple Screen dựa trên nồng độ chất trong máu mẹ và thống kê (sàng lọc), trong khi chọc ối phân tích trực tiếp vật liệu di truyền từ tế bào thai nhi (chẩn đoán xác định).",
+            "analysis": "Phân biệt Sàng lọc vs Chẩn đoán.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.29",
+            "level": "L2",
+            "category": "genetics",
+            "question": "Tại sao người mang gen bệnh hồng cầu hình liềm (sickle cell trait) thường không có triệu chứng nhưng vẫn cần tư vấn di truyền?",
+            "expected_answer": "Vì họ có thể truyền gen bệnh cho con. Nếu bạn đời cũng mang gen, con có nguy cơ mắc bệnh nặng.",
+            "analysis": "Lý do tư vấn: Nguy cơ cho thế hệ sau.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.30",
+            "level": "L2",
+            "category": "nutrition",
+            "question": "Mối quan hệ giữa việc bổ sung vitamin C và sắt trong bữa ăn là gì?",
+            "expected_answer": "Vitamin C giúp tăng cường hấp thu sắt từ thực phẩm thực vật.",
+            "analysis": "Tương tác dinh dưỡng: C tăng hấp thu Sắt.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.31",
+            "level": "L2",
+            "category": "exercise",
+            "question": "Tại sao phụ nữ mang thai nên tránh các bài tập nằm ngửa sau tam cá nguyệt thứ nhất?",
+            "expected_answer": "Vì tư thế này có thể khiến tử cung chèn ép tĩnh mạch chủ dưới, làm giảm lượng máu về tim và tới thai nhi.",
+            "analysis": "Cơ chế sinh lý: Chèn ép tĩnh mạch chủ.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.32",
+            "level": "L2",
+            "category": "nutrition",
+            "question": "Tại sao cá kiếm và cá kình bị hạn chế trong thai kỳ dù hải sản nói chung là tốt?",
+            "expected_answer": "Vì chúng chứa hàm lượng methylmercury (thủy ngân) cao, có thể gây hại cho hệ thần kinh thai nhi.",
+            "analysis": "Ngoại lệ an toàn: Thủy ngân trong cá lớn.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.33",
+            "level": "L2",
+            "category": "prenatal_screening",
+            "question": "Sự khác biệt về thời gian thực hiện giữa siêu âm độ mờ da gáy và siêu âm hình thái học là gì?",
+            "expected_answer": "Độ mờ da gáy đo ở quý 1 (tuần 11-13), siêu âm hình thái học thực hiện ở quý 2 (tuần 18-22).",
+            "analysis": "So sánh mốc thời gian: Quý 1 vs Quý 2.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.34",
+            "level": "L2",
+            "category": "labor",
+            "question": "Lợi ích của gây tê ngoài màng cứng đối với sản phụ quá lo lắng là gì ngoài việc giảm đau?",
+            "expected_answer": "Giúp sản phụ thư giãn, nghỉ ngơi và dự trữ năng lượng cho giai đoạn rặn đẻ.",
+            "analysis": "Lợi ích tâm lý/thể chất gián tiếp.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "2.35",
+            "level": "L2",
+            "category": "labor",
+            "question": "Tại sao việc theo dõi nhịp tim thai liên tục (CTG) lại quan trọng trong quá trình chuyển dạ?",
+            "expected_answer": "Để phát hiện sớm các dấu hiệu suy thai (thiếu oxy) thông qua sự thay đổi nhịp tim.",
+            "analysis": "Mục đích lâm sàng: Phát hiện suy thai.",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.36",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Dựa vào nội dung văn bản cung cấp, hãy mô tả quy trình kỹ thuật phân tích DNA trong xét nghiệm NIPT.",
+            "expected_answer": "Thông tin về quy trình kỹ thuật NIPT không có trong tài liệu này.",
+            "analysis": "Phát hiện thiếu thông tin (Missing info). Tài liệu không mô tả kỹ thuật lab.",
+            "adversarial_type": "missing_info",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.37",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Chính xác bao nhiêu gram protein mỗi ngày được khuyến nghị trong tài liệu?",
+            "expected_answer": "Tài liệu không đưa ra con số gram cụ thể, chỉ khuyến nghị ăn đa dạng các loại protein.",
+            "analysis": "Phát hiện thiếu số liệu cụ thể.",
+            "adversarial_type": "missing_info",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.38",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Tài liệu có liệt kê sushi, phô mai mềm hay thịt nguội vào danh sách các món ăn cần tránh không?",
+            "expected_answer": "Không, tài liệu xác nhận rằng danh sách chi tiết các thực phẩm cần tránh là không có sẵn.",
+            "analysis": "Xác nhận không có danh sách chi tiết.",
+            "adversarial_type": "missing_info",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.39",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Theo tài liệu, quy trình tiêu chuẩn vàng để chẩn đoán xác định hội chứng Down được mô tả như thế nào?",
+            "expected_answer": "Tài liệu không mô tả quy trình chẩn đoán xác định chi tiết.",
+            "analysis": "Phát hiện thiếu mô tả quy trình.",
+            "adversarial_type": "missing_info",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.40",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Các chỉ số sinh hóa nào được sử dụng trong Double Test theo bài viết?",
+            "expected_answer": "Bài viết không cung cấp thông tin chi tiết về Double Test.",
+            "analysis": "Phát hiện thiếu thông tin về Double Test.",
+            "adversarial_type": "missing_info",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.41",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Có phải chọc ối an toàn tuyệt đối và không có nguy cơ lây nhiễm bệnh từ mẹ sang con không?",
+            "expected_answer": "Không. Chọc ối có rủi ro lây nhiễm các bệnh lây qua đường máu như HIV, viêm gan B, C từ mẹ sang thai nhi.",
+            "analysis": "Phản bác quan niệm sai (Safety constraint).",
+            "adversarial_type": "safety_constraint",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.42",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Tài liệu có đề xuất tiêm vắc-xin Sởi - Quai bị - Rubella (MMR) trong thai kỳ không?",
+            "expected_answer": "Không. Tài liệu không đề cập đến vắc-xin MMR trong danh sách an toàn.",
+            "analysis": "An toàn vắc-xin. MMR là chống chỉ định (hoặc không được đề cập).",
+            "adversarial_type": "safety_constraint",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.43",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Theo MSD Manuals, phù chân khi đứng lâu có phải là dấu hiệu đặc trưng nhất của tiền sản giật không?",
+            "expected_answer": "Không. Phù không do tư thế (như sưng mặt, tay) mới là dấu hiệu đặc trưng hơn. Phù chân thường là sinh lý.",
+            "analysis": "Phân biệt triệu chứng sinh lý vs bệnh lý.",
+            "adversarial_type": "safety_constraint",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.44",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Nếu kết quả chọc ối âm tính, bác sĩ có thể đảm bảo 100% em bé sinh ra không mắc bất kỳ bệnh di truyền nào không?",
+            "expected_answer": "Không. Kết quả âm tính không loại trừ khả năng thai nhi mắc các rối loạn di truyền khác chưa được kiểm tra.",
+            "analysis": "Giới hạn của xét nghiệm (Limitation). Không cam kết tuyệt đối.",
+            "adversarial_type": "limitation",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.45",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Người gốc Bắc Âu có được liệt kê là nhóm nguy cơ cao mắc bệnh hồng cầu hình liềm trong văn bản không?",
+            "expected_answer": "Không. Văn bản liệt kê người gốc Phi, Địa Trung Hải... nhưng không có Bắc Âu.",
+            "analysis": "Kiểm tra danh sách loại trừ (Exclusion list).",
+            "adversarial_type": "exclusion_list",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.46",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Dựa trên các đoạn trích dẫn, hãy liệt kê các triệu chứng lâm sàng như 'ăn nhiều, uống nhiều, tiểu nhiều' của thai phụ bị tiểu đường.",
+            "expected_answer": "Các đoạn trích dẫn cung cấp định nghĩa và thời điểm, nhưng không liệt kê cụ thể các triệu chứng lâm sàng này.",
+            "analysis": "Phát hiện thông tin ngoại lai (External knowledge trap).",
+            "adversarial_type": "external_knowledge_trap",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.47",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Văn bản có quy định bắt buộc phụ nữ sinh thường phải kiêng vận động đủ 6 tuần (ở cữ) không?",
+            "expected_answer": "Không. Văn bản cho biết phụ nữ sinh thường có thể tập nhẹ chỉ vài ngày sau sinh hoặc khi thấy sẵn sàng.",
+            "analysis": "Phản bác quan niệm dân gian (Folk wisdom).",
+            "adversarial_type": "folk_wisdom_trap",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.48",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Tập thể dục 3 lần/ngày, mỗi lần 10 phút có bị coi là kém hiệu quả hơn tập một lần 30 phút không?",
+            "expected_answer": "Không, tài liệu coi chúng là tương đương và cho phép chia nhỏ.",
+            "analysis": "So sánh tương đương (Equivalence).",
+            "adversarial_type": "equivalence",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.49",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Tại sao sàng lọc gen chỉ cho người mẹ là chưa đủ đối với bệnh Thalassemia?",
+            "expected_answer": "Vì nếu người cha cũng mang gen, tỷ lệ con mắc bệnh tăng vọt lên 25%. Cần biết cả hai.",
+            "analysis": "Suy luận hệ thống (Systemic inference).",
+            "adversarial_type": "systemic_inference",
+            "source": "yhoccongdong.com"
+        },
+        {
+            "id": "3.50",
+            "level": "L3",
+            "category": "adversarial",
+            "question": "Có phải tài liệu cấm hoàn toàn việc tiêu thụ Vitamin A dưới mọi hình thức không?",
+            "expected_answer": "Không, tài liệu chỉ cảnh báo tránh liều cao trong thực phẩm chức năng, còn Vitamin A trong vitamin tổng hợp với liều chuẩn vẫn cần thiết.",
+            "analysis": "Phân biệt sắc thái (Nuance).",
+            "adversarial_type": "nuance",
+            "source": "yhoccongdong.com"
+        }
+    ]
+}

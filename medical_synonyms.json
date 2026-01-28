@@ -1,0 +1,1573 @@
+{
+  "version": "1.0",
+  "description": "Vietnamese Medical Synonyms Dictionary for RAG System V2",
+  "last_updated": "2025-12-08T21:50:00.703945",
+  "categories": {
+    "gynecology": {
+      "rong kinh": [
+        "menorrhagia",
+        "ra máu kinh nhiều",
+        "kinh nguyệt kéo dài",
+        "xuất huyết tử cung",
+        "kinh ra nhiều",
+        "chảy máu kinh kéo dài"
+      ],
+      "thống kinh": [
+        "đau bụng kinh",
+        "dysmenorrhea",
+        "đau bụng hành kinh",
+        "đau khi hành kinh",
+        "đau bụng khi có kinh"
+      ],
+      "mãn kinh": [
+        "menopause",
+        "tắt kinh",
+        "hết kinh",
+        "thời kỳ mãn kinh",
+        "tiền mãn kinh"
+      ],
+      "vô kinh": [
+        "amenorrhea",
+        "mất kinh",
+        "không có kinh",
+        "không ra kinh"
+      ],
+      "cường kinh": [
+        "hypermenorrhea",
+        "kinh nhiều",
+        "ra kinh quá nhiều"
+      ],
+      "thiểu kinh": [
+        "hypomenorrhea",
+        "kinh ít",
+        "ra kinh ít"
+      ],
+      "polyp tử cung": [
+        "khối u nhỏ trong tử cung",
+        "u nhú tử cung",
+        "polyp cổ tử cung",
+        "polyp nội mạc tử cung",
+        "cục thịt nhỏ trong tử cung",
+        "cục thịt thừa trong tử cung",
+        "uterine polyp"
+      ]
+    },
+    "pregnancy": {
+      "thai kỳ": [
+        "mang thai",
+        "có thai",
+        "pregnancy",
+        "bầu",
+        "đang mang thai",
+        "thai nghén"
+      ],
+      "tiền sản giật": [
+        "preeclampsia",
+        "nhiễm độc thai nghén",
+        "tăng huyết áp thai kỳ",
+        "hội chứng tiền sản giật"
+      ],
+      "sản giật": [
+        "eclampsia",
+        "co giật thai nghén",
+        "cơn giật sản khoa"
+      ],
+      "thai ngoài tử cung": [
+        "ectopic pregnancy",
+        "chửa ngoài dạ con",
+        "thai lạc chỗ"
+      ],
+      "sảy thai": [
+        "abortion",
+        "miscarriage",
+        "mất thai",
+        "thai chết lưu",
+        "sẩy thai"
+      ],
+      "băng huyết": [
+        "postpartum hemorrhage",
+        "xuất huyết sau sinh",
+        "chảy máu sau đẻ",
+        "băng huyết sau sinh"
+      ],
+      "nhau tiền đạo": [
+        "placenta previa",
+        "rau tiền đạo",
+        "nhau bám thấp"
+      ],
+      "đa ối": [
+        "polyhydramnios",
+        "nước ối nhiều",
+        "dư ối"
+      ],
+      "thiểu ối": [
+        "oligohydramnios",
+        "nước ối ít",
+        "cạn ối"
+      ],
+      "ốm nghén": [
+        "morning sickness",
+        "nghén",
+        "nôn nghén",
+        "buồn nôn thai kỳ"
+      ]
+    },
+    "conditions": {
+      "tiểu đường": [
+        "đái tháo đường",
+        "diabetes",
+        "bệnh đường huyết",
+        "tiểu đường type 2"
+      ],
+      "tiểu đường thai kỳ": [
+        "gestational diabetes",
+        "đái tháo đường thai kỳ",
+        "tiểu đường khi mang thai"
+      ],
+      "cao huyết áp": [
+        "tăng huyết áp",
+        "hypertension",
+        "huyết áp cao"
+      ],
+      "thiếu máu": [
+        "anemia",
+        "thiếu máu thiếu sắt",
+        "iron deficiency anemia"
+      ],
+      "viêm nhiễm": [
+        "infection",
+        "nhiễm trùng",
+        "viêm"
+      ],
+      "u xơ tử cung": [
+        "uterine fibroids",
+        "nhân xơ tử cung",
+        "u cơ trơn tử cung"
+      ],
+      "lạc nội mạc tử cung": [
+        "endometriosis",
+        "nội mạc tử cung lạc chỗ"
+      ]
+    },
+    "defects": {
+      "dị tật ống thần kinh": [
+        "neural tube defects",
+        "dị tật bẩm sinh thần kinh",
+        "nứt đốt sống",
+        "vô sọ"
+      ],
+      "dị tật bẩm sinh": [
+        "congenital defects",
+        "thai dị tật",
+        "dị tật thai nhi"
+      ],
+      "hội chứng down": [
+        "down syndrome",
+        "trisomy 21",
+        "ba nhiễm sắc thể 21"
+      ]
+    },
+    "medications": {
+      "acid folic": [
+        "folate",
+        "vitamin b9",
+        "axit folic",
+        "folic acid"
+      ],
+      "sắt": [
+        "iron",
+        "sulfate sắt",
+        "sắt nguyên tố",
+        "viên sắt"
+      ],
+      "canxi": [
+        "calcium",
+        "calci",
+        "can xi"
+      ],
+      "kháng sinh": [
+        "antibiotic",
+        "thuốc kháng khuẩn",
+        "kháng sinh phổ rộng"
+      ],
+      "thuốc tránh thai": [
+        "contraceptive",
+        "thuốc ngừa thai",
+        "thuốc viên tránh thai",
+        "birth control"
+      ],
+      "thuốc giảm đau": [
+        "painkiller",
+        "analgesic",
+        "thuốc giảm đau hạ sốt"
+      ],
+      "kháng viêm": [
+        "anti-inflammatory",
+        "nsaids",
+        "thuốc kháng viêm không steroid"
+      ]
+    },
+    "symptoms": {
+      "buồn nôn": [
+        "nausea",
+        "ói",
+        "nôn mửa",
+        "cảm giác buồn nôn"
+      ],
+      "đau bụng": [
+        "abdominal pain",
+        "đau bụng dưới",
+        "đau vùng bụng"
+      ],
+      "ra máu": [
+        "bleeding",
+        "chảy máu",
+        "xuất huyết",
+        "ra huyết"
+      ],
+      "sốt": [
+        "fever",
+        "sốt cao",
+        "nhiệt độ cao"
+      ],
+      "mệt mỏi": [
+        "fatigue",
+        "kiệt sức",
+        "suy nhược"
+      ]
+    },
+    "procedures": {
+      "siêu âm": [
+        "ultrasound",
+        "siêu âm thai",
+        "sonography"
+      ],
+      "xét nghiệm": [
+        "test",
+        "xét nghiệm máu",
+        "blood test"
+      ],
+      "sinh mổ": [
+        "cesarean section",
+        "mổ lấy thai",
+        "đẻ mổ",
+        "c-section"
+      ],
+      "sinh thường": [
+        "vaginal delivery",
+        "đẻ thường",
+        "sinh ngã âm đạo"
+      ]
+    },
+    "corpus_extracted": {
+      "tập thể dục": [
+        "hoạt động thể chất",
+        "vận động thể chất",
+        "exercise",
+        "physical activity"
+      ],
+      "trầm cảm sau sinh": [
+        "trầm cảm sau sinh",
+        "postpartum depression",
+        "trầm cảm hậu sản"
+      ],
+      "huyết sắc tố": [
+        "hemoglobinopathy",
+        "bệnh huyết sắc tố"
+      ],
+      "bệnh hồng cầu hình liềm": [
+        "sickle cell disease",
+        "hồng cầu hình liềm"
+      ],
+      "thalassemia": [
+        "bệnh thalassemia",
+        "thalassemia"
+      ],
+      "sàng lọc người mang gen": [
+        "xét nghiệm sàng lọc gen",
+        "carrier screening"
+      ],
+      "chọc dò màng ối": [
+        "chọc ối",
+        "amniocentesis"
+      ],
+      "rối loạn di truyền": [
+        "genetic disorders",
+        "bệnh di truyền"
+      ],
+      "acid folic": [
+        "folate",
+        "vitamin b9"
+      ],
+      "folate": [
+        "axit folic tự nhiên",
+        "acid folic",
+        "vitamin b9",
+        "folate"
+      ],
+      "choline": [
+        "choline",
+        "choline"
+      ],
+      "omega-3": [
+        "axit béo omega-3",
+        "omega-3 fatty acids"
+      ],
+      "vitamin b": [
+        "vitamin nhóm b",
+        "b vitamins"
+      ],
+      "vitamin c": [
+        "axit ascorbic",
+        "vitamin c"
+      ],
+      "dị tật ống thần kinh": [
+        "neural tube defects",
+        "dị tật ống thần kinh"
+      ],
+      "tăng huyết áp": [
+        "cao huyết áp",
+        "tăng áp lực động mạch",
+        "hypertension"
+      ],
+      "đái tháo đường thai kỳ": [
+        "đtđtk",
+        "gestational diabetes mellitus",
+        "gestational diabetes",
+        "tiểu đường thai kỳ"
+      ],
+      "glucose": [
+        "glucose",
+        "đường huyết",
+        "blood glucose",
+        "đường",
+        "đường glucose"
+      ],
+      "nhiễm trùng": [
+        "viêm nhiễm",
+        "infection"
+      ],
+      "rạn da": [
+        "vết rạn da",
+        "stretch marks",
+        "striae gravidarum"
+      ],
+      "thai kỳ": [
+        "pregnancy",
+        "thời kỳ mang thai",
+        "mang thai",
+        "giai đoạn mang thai",
+        "thời gian mang thai"
+      ],
+      "sảy thai": [
+        "thai chết trước 24 tuần",
+        "phá thai tự nhiên",
+        "miscarriage"
+      ],
+      "bất thường nhiễm sắc thể": [
+        "rối loạn nhiễm sắc thể",
+        "chromosomal abnormalities",
+        "chromosomal abnormalities"
+      ],
+      "rau tiền đạo": [
+        "nhau tiền đạo",
+        "placenta previa",
+        "placenta previa"
+      ],
+      "rau cài răng lược": [
+        "nhau cài răng lược",
+        "placenta accreta",
+        "placenta accreta"
+      ],
+      "mạch máu tiền đạo": [
+        "mạch máu rau tiền đạo",
+        "vasa previa",
+        "vasa previa"
+      ],
+      "cử động thai": [
+        "động thai",
+        "thai máy",
+        "fetal movement"
+      ],
+      "hormone hcg": [
+        "hormone thai kỳ",
+        "human chorionic gonadotropin",
+        "hcg"
+      ],
+      "xét nghiệm thử thai": [
+        "xét nghiệm có thai",
+        "pregnancy test",
+        "pregnancy test"
+      ],
+      "bánh rau": [
+        "nhau thai",
+        "placenta",
+        "placenta"
+      ],
+      "hiếm muộn": [
+        "infertility",
+        "khó có thai",
+        "khó có con",
+        "vô sinh"
+      ],
+      "vô sinh": [
+        "hiếm muộn",
+        "infertility"
+      ],
+      "hyfosy": [
+        "siêu âm đánh giá ống dẫn trứng bằng chất tương phản",
+        "hysterosalpingo-foam sonography"
+      ],
+      "ống dẫn trứng": [
+        "vòi trứng",
+        "fallopian tube"
+      ],
+      "buồng tử cung": [
+        "tử cung",
+        "dạ con",
+        "uterus"
+      ],
+      "lạc nội mạc tử cung": [
+        "endometriosis",
+        "nội mạc tử cung lạc chỗ"
+      ],
+      "viêm vùng chậu": [
+        "pid",
+        "viêm nhiễm vùng chậu",
+        "pelvic inflammatory disease"
+      ],
+      "viêm âm đạo": [
+        "vaginitis",
+        "viêm nhiễm âm đạo",
+        "nhiễm trùng âm đạo"
+      ],
+      "rối loạn phụ khoa": [
+        "rối loạn hệ sinh dục nữ",
+        "gynecological disorders"
+      ],
+      "đau bụng kinh": [
+        "đau kinh",
+        "đau khi hành kinh",
+        "dysmenorrhea"
+      ],
+      "khí hư": [
+        "huyết trắng âm đạo",
+        "dịch âm đạo",
+        "vaginal discharge"
+      ],
+      "vô kinh": [
+        "không có kinh",
+        "absence of menstruation",
+        "amenorrhea"
+      ],
+      "ra máu âm đạo": [
+        "vaginal bleeding",
+        "chảy máu âm đạo"
+      ],
+      "tiêm phòng cúm": [
+        "chích ngừa cúm",
+        "vaccination against influenza",
+        "flu vaccination"
+      ],
+      "thai ngoài tử cung": [
+        "ectopic pregnancy",
+        "thai ngoài dạ con",
+        "chửa ngoài tử cung",
+        "mang thai ngoài tử cung"
+      ],
+      "ung thư vú": [
+        "ung thư tuyến vú",
+        "breast cancer",
+        "k vú"
+      ],
+      "u xơ tử cung": [
+        "u cơ tử cung",
+        "uterine fibroids",
+        "myoma tử cung"
+      ],
+      "phẫu thuật nội soi": [
+        "phẫu thuật ít xâm lấn",
+        "laparoscopic surgery",
+        "mổ nội soi"
+      ],
+      "methotrexate": [
+        "mtx",
+        "methotrexate",
+        "thuốc methotrexate"
+      ],
+      "bao cao su": [
+        "bao cao su nam",
+        "condom",
+        "bao cao su phòng tránh thai"
+      ],
+      "thuốc tránh thai": [
+        "thuốc ngừa thai",
+        "contraceptive pills",
+        "biện pháp tránh thai",
+        "thuốc tránh thai hàng ngày"
+      ],
+      "viêm phổi": [
+        "nhiễm trùng phổi",
+        "viêm phổi",
+        "bệnh viêm phổi",
+        "pneumonia"
+      ],
+      "nhiễm trùng đường tiết niệu": [
+        "uti",
+        "nhiễm trùng tiết niệu",
+        "viêm đường tiết niệu"
+      ],
+      "human papillomavirus": [
+        "hpv",
+        "virus u nhú ở người",
+        "virus hpv"
+      ],
+      "vắc xin hpv": [
+        "vaccine phòng hpv",
+        "hpv vaccine",
+        "vắc xin ngừa hpv"
+      ],
+      "darunavir": [
+        "prezista",
+        "darunavir",
+        "thuốc darunavir"
+      ],
+      "efavirenz": [
+        "sustiva",
+        "efavirenz",
+        "thuốc efavirenz"
+      ],
+      "lopinavir/ritonavir": [
+        "kaletra",
+        "lopinavir/ritonavir",
+        "thuốc lopinavir/ritonavir"
+      ],
+      "nevirapine": [
+        "viramune",
+        "nevirapine",
+        "thuốc nevirapine"
+      ],
+      "tiền sản giật": [
+        "tăng huyết áp sau sinh",
+        "tăng huyết áp thai kỳ",
+        "preeclampsia"
+      ],
+      "cao huyết áp": [
+        "tăng huyết áp",
+        "hypertension",
+        "huyết áp cao"
+      ],
+      "axit folic": [
+        "vitamin b9",
+        "folate",
+        "axit folic tổng hợp",
+        "folic acid",
+        "vitamin b9 tổng hợp"
+      ],
+      "ống thần kinh": [
+        "neural tube",
+        "ống thần kinh thai nhi",
+        "ống thần kinh phát triển"
+      ],
+      "vắc xin covid-19": [
+        "vaccine covid-19",
+        "vắc xin phòng covid-19",
+        "covid-19 vaccine"
+      ],
+      "phụ nữ mang thai": [
+        "pregnant women",
+        "thai phụ",
+        "phụ nữ có thai"
+      ],
+      "ibuprofen": [
+        "thuốc kháng viêm non-steroid",
+        "nsaid",
+        "ibuprofen"
+      ],
+      "kháng viêm non-steroid": [
+        "nsaid",
+        "thuốc chống viêm không steroid",
+        "non-steroidal anti-inflammatory drug"
+      ],
+      "tập thể dục an toàn": [
+        "tập luyện an toàn",
+        "exercise during pregnancy",
+        "tập thể dục khi mang thai"
+      ],
+      "khuyết tật ống thần kinh": [
+        "neural tube defects",
+        "dị tật ống thần kinh",
+        "khuyết tật ống thần kinh thai nhi"
+      ],
+      "béo phì": [
+        "obesity",
+        "tăng cân quá mức",
+        "béo"
+      ],
+      "triệu chứng": [
+        "dấu hiệu",
+        "symptoms",
+        "biểu hiện bệnh"
+      ],
+      "tăng huyết áp sau 20 tuần": [
+        "tăng huyết áp thai kỳ muộn",
+        "late-onset hypertension",
+        "tăng huyết áp sau 20 tuần thai kỳ"
+      ],
+      "tác dụng phụ": [
+        "phản ứng phụ",
+        "side effects",
+        "tác dụng không mong muốn"
+      ],
+      "sinh non": [
+        "trẻ sinh thiếu tháng",
+        "đẻ non",
+        "preterm birth",
+        "trẻ sinh non"
+      ],
+      "hội chứng đột tử ở trẻ sơ sinh": [
+        "sids",
+        "sudden infant death syndrome",
+        "hội chứng đột tử sơ sinh"
+      ],
+      "vitamin a": [
+        "retinol",
+        "vitamin tan trong dầu",
+        "vitamin a"
+      ],
+      "vitamin b-1": [
+        "thiamine",
+        "vitamin b1",
+        "vitamin b-1"
+      ],
+      "vitamin b-2": [
+        "riboflavin",
+        "vitamin b2",
+        "vitamin b-2"
+      ],
+      "thử thai": [
+        "test thai",
+        "pregnancy test"
+      ],
+      "beta hcg huyết thanh": [
+        "beta hcg",
+        "human chorionic gonadotropin",
+        "beta hcg serum"
+      ],
+      "siêu âm": [
+        "ultrasonography",
+        "siêu âm thai",
+        "chẩn đoán hình ảnh bằng sóng âm",
+        "ultrasound"
+      ],
+      "cơn co tử cung": [
+        "co thắt tử cung",
+        "contractions",
+        "uterine contractions"
+      ],
+      "hôi miệng": [
+        "halitosis",
+        "miệng có mùi",
+        "bad breath"
+      ],
+      "sẩy thai": [
+        "miscarriage",
+        "thai lưu sớm",
+        "spontaneous abortion"
+      ],
+      "trẻ sơ sinh nhẹ cân": [
+        "trẻ nhẹ cân",
+        "low birth weight infant"
+      ],
+      "hút thuốc lá trong thai kỳ": [
+        "hút thuốc khi mang thai",
+        "smoking during pregnancy"
+      ],
+      "bơm tinh trùng": [
+        "iui",
+        "bơm tinh trùng vào buồng tử cung",
+        "intrauterine insemination"
+      ],
+      "tinh trùng": [
+        "tinh trùng",
+        "sperm",
+        "spermatozoa"
+      ],
+      "kích thích buồng trứng": [
+        "kích thích noãn",
+        "ovarian stimulation"
+      ],
+      "nang noãn": [
+        "noãn nang",
+        "follicle"
+      ],
+      "sinh mổ": [
+        "phẫu thuật lấy thai",
+        "c-section",
+        "caesarean section",
+        "mổ lấy thai",
+        "cesarean section"
+      ],
+      "gây mê": [
+        "mê",
+        "anesthesia"
+      ],
+      "phẫu thuật": [
+        "mổ",
+        "surgical intervention",
+        "mổ lấy thai",
+        "surgery"
+      ],
+      "ngừa thai": [
+        "biện pháp tránh thai",
+        "contraception"
+      ],
+      "dụng cụ tử cung": [
+        "đặt vòng",
+        "vòng tránh thai",
+        "intrauterine device (iud)"
+      ],
+      "khả năng sinh sản": [
+        "khả năng có thai",
+        "fertility"
+      ],
+      "nhiễm covid-19": [
+        "nhiễm coronavirus",
+        "covid-19 infection"
+      ],
+      "tiểu đường thai kỳ": [
+        "gestational diabetes",
+        "bệnh tiểu đường khi mang thai",
+        "đái tháo đường thai kỳ"
+      ],
+      "đi tiểu thường xuyên": [
+        "tiểu nhiều",
+        "polyuria"
+      ],
+      "khát nước nhiều": [
+        "polydipsia",
+        "tăng cảm giác khát"
+      ],
+      "polyp cổ tử cung": [
+        "u nhú cổ tử cung",
+        "cervical polyp"
+      ],
+      "xét nghiệm phết tế bào cổ tử cung": [
+        "pap test",
+        "phết tế bào cổ tử cung"
+      ],
+      "nhiễm khuẩn âm đạo": [
+        "viêm do vi khuẩn",
+        "bacterial vaginosis"
+      ],
+      "candida": [
+        "nhiễm nấm âm đạo",
+        "candida infection"
+      ],
+      "chlamydia": [
+        "nhiễm chlamydia",
+        "chlamydia infection"
+      ],
+      "bệnh lậu": [
+        "lậu",
+        "gonorrhea"
+      ],
+      "thuốc trong thai kỳ": [
+        "sử dụng thuốc khi mang thai",
+        "medication in pregnancy"
+      ],
+      "ma túy": [
+        "thuốc gây nghiện",
+        "drug abuse"
+      ],
+      "cocain": [
+        "cocaine",
+        "thuốc kích thích"
+      ],
+      "say tàu xe": [
+        "say xe",
+        "motion sickness"
+      ],
+      "đau đầu nhẹ": [
+        "nhức đầu nhẹ",
+        "mild headache"
+      ],
+      "em bé to": [
+        "bé to",
+        "macrosomia"
+      ],
+      "insulin": [
+        "hormone insulin",
+        "insulin hormone"
+      ],
+      "tuyến tụy": [
+        "tụy",
+        "pancreas"
+      ],
+      "xét nghiệm máu": [
+        "công thức máu",
+        "blood test"
+      ],
+      "hiv": [
+        "virus gây suy giảm miễn dịch",
+        "human immunodeficiency virus"
+      ],
+      "viêm gan siêu vi b": [
+        "viêm gan b",
+        "hepatitis b"
+      ],
+      "rubella": [
+        "bệnh sởi đức",
+        "german measles"
+      ],
+      "tử cung": [
+        "dạ con",
+        "uterus"
+      ],
+      "u nang buồng trứng": [
+        "nang buồng trứng",
+        "ovarian cyst"
+      ],
+      "nang chức năng": [
+        "nang buồng trứng chức năng",
+        "functional cyst"
+      ],
+      "toxoplasma gondii": [
+        "ký sinh trùng t.gondii",
+        "toxoplasma gondii"
+      ],
+      "cúm": [
+        "bệnh cảm nặng",
+        "influenza"
+      ],
+      "tuổi thai": [
+        "tuổi thai nhi",
+        "thai kỳ",
+        "gestational age"
+      ],
+      "ngày dự sinh": [
+        "ngày sinh dự kiến",
+        "ngày sinh ước tính",
+        "estimated due date"
+      ],
+      "kỳ kinh cuối": [
+        "ngày đầu tiên của kỳ kinh cuối",
+        "chu kỳ kinh cuối",
+        "last menstrual period"
+      ],
+      "nước ối": [
+        "dịch ối",
+        "dịch nước ối",
+        "amniotic fluid"
+      ],
+      "sanh non": [
+        "sinh non",
+        "preterm birth"
+      ],
+      "trẻ nhẹ cân": [
+        "trẻ cân nặng thấp",
+        "low birth weight infant"
+      ],
+      "dị tật bẩm sinh": [
+        "congenital malformation",
+        "congenital anomaly",
+        "bất thường bẩm sinh",
+        "birth defect",
+        "khuyết tật bẩm sinh"
+      ],
+      "vắc-xin": [
+        "vaccine",
+        "thuốc chủng ngừa"
+      ],
+      "bệnh truyền nhiễm": [
+        "nhiễm trùng truyền nhiễm",
+        "infectious disease"
+      ],
+      "bệnh di truyền": [
+        "rối loạn di truyền",
+        "genetic disease"
+      ],
+      "trễ kinh": [
+        "không có kinh nguyệt",
+        "mất kinh",
+        "delay in menstruation",
+        "missed period",
+        "chậm kinh"
+      ],
+      "nghén": [
+        "ốm nghén",
+        "morning sickness"
+      ],
+      "thể tích nước ối": [
+        "lượng nước ối",
+        "amniotic fluid volume"
+      ],
+      "sẹo mổ lấy thai": [
+        "sẹo mổ lấy con",
+        "sẹo mổ đẻ",
+        "cesarean scar"
+      ],
+      "chuyển dạ": [
+        "parturition",
+        "quá trình sinh",
+        "giai đoạn sinh",
+        "sinh con",
+        "đẻ",
+        "labor"
+      ],
+      "mổ lấy thai": [
+        "phẫu thuật lấy thai",
+        "mổ đẻ",
+        "cesarean section"
+      ],
+      "teratogen": [
+        "tác nhân gây dị tật",
+        "yếu tố gây dị tật bẩm sinh"
+      ],
+      "đa thai": [
+        "song thai",
+        "mang thai đa thai",
+        "multiple pregnancy",
+        "song thai, tam thai"
+      ],
+      "thai nhi": [
+        "em bé trong bụng mẹ",
+        "bào thai",
+        "fetus",
+        "embryo",
+        "thai"
+      ],
+      "tia x": [
+        "tia x-quang",
+        "x-ray radiation"
+      ],
+      "khám tiền sản": [
+        "khám thai định kỳ",
+        "prenatal checkup"
+      ],
+      "nuôi con bằng sữa mẹ": [
+        "cho con bú sữa mẹ",
+        "breastfeeding"
+      ],
+      "nhiễm hiv": [
+        "hiv dương tính",
+        "hiv infection"
+      ],
+      "bệnh lao": [
+        "lao phổi",
+        "tuberculosis"
+      ],
+      "thai lưu": [
+        "thai chết lưu",
+        "stillbirth",
+        "thai tử vong sau 24 tuần"
+      ],
+      "nhau thai": [
+        "placenta",
+        "bánh nhau",
+        "rau thai"
+      ],
+      "doppler cầm tay": [
+        "máy doppler",
+        "doppler fetal monitor"
+      ],
+      "vaccine cúm": [
+        "vaccine influenza",
+        "vaccine phòng cúm"
+      ],
+      "vaccine ho gà": [
+        "vaccine pertussis",
+        "vaccine phòng ho gà"
+      ],
+      "virus zika": [
+        "zika virus"
+      ],
+      "bmi (chỉ số khối cơ thể)": [
+        "body mass index",
+        "chỉ số khối cơ thể"
+      ],
+      "thiếu máu": [
+        "thiếu máu thiếu sắt",
+        "anemia"
+      ],
+      "bổ sung sắt": [
+        "thuốc bổ sung sắt",
+        "iron supplementation"
+      ],
+      "chuyển dạ sinh non": [
+        "co thắt tử cung sớm",
+        "preterm labor"
+      ],
+      "progesterone": [
+        "hormone progesterone",
+        "progesterone hormone"
+      ],
+      "cổ tử cung": [
+        "cervix",
+        "phần dưới tử cung"
+      ],
+      "cổ tử cung ngắn": [
+        "cervical shortening",
+        "short cervix"
+      ],
+      "thuốc giảm co tử cung": [
+        "thuốc chống co bóp tử cung",
+        "tocolytics"
+      ],
+      "corticosteroids trước sinh": [
+        "acs",
+        "antenatal corticosteroids"
+      ],
+      "kháng sinh": [
+        "thuốc kháng sinh",
+        "antibiotics"
+      ],
+      "ngưng thở": [
+        "hiện tượng ngưng hoạt động hô hấp",
+        "apnea"
+      ],
+      "nicu": [
+        "đơn vị chăm sóc đặc biệt trẻ sơ sinh",
+        "neonatal intensive care unit"
+      ],
+      "cân nặng sơ sinh": [
+        "trọng lượng sơ sinh",
+        "birth weight"
+      ],
+      "biến chứng thai kỳ": [
+        "biến chứng trong thai kỳ",
+        "pregnancy complications"
+      ],
+      "dương vật": [
+        "cậu nhỏ",
+        "cơ quan sinh dục nam",
+        "penis",
+        "bộ phận sinh dục nam"
+      ],
+      "tình dục": [
+        "quan hệ tình dục",
+        "sex",
+        "sexual intercourse"
+      ],
+      "sinh lý": [
+        "chức năng sinh lý",
+        "physiology",
+        "bình thường"
+      ],
+      "bệnh lý": [
+        "tình trạng bệnh",
+        "pathology",
+        "bệnh"
+      ],
+      "hormon": [
+        "hormone",
+        "nội tiết tố"
+      ],
+      "rụng trứng": [
+        "phóng noãn",
+        "ovulation"
+      ],
+      "siêu âm thai nhi": [
+        "siêu âm thai",
+        "ultrasound thai nhi",
+        "prenatal ultrasound"
+      ],
+      "máy biến năng": [
+        "đầu dò siêu âm",
+        "transducer"
+      ],
+      "siêu âm qua bụng": [
+        "siêu âm ổ bụng",
+        "abdominal ultrasound"
+      ],
+      "siêu âm qua âm đạo": [
+        "siêu âm nội soi âm đạo",
+        "endovaginal ultrasound",
+        "transvaginal ultrasound"
+      ],
+      "tuổi dậy thì": [
+        "giai đoạn dậy thì",
+        "puberty"
+      ],
+      "hormone": [
+        "nội tiết tố",
+        "hormon"
+      ],
+      "bộ phận sinh dục": [
+        "cơ quan sinh dục",
+        "genital organs"
+      ],
+      "khởi phát chuyển dạ": [
+        "bắt đầu chuyển dạ",
+        "labor onset",
+        "induction of labor",
+        "kích thích chuyển dạ",
+        "khởi động chuyển dạ"
+      ],
+      "sinh thường": [
+        "sinh ngả âm đạo",
+        "vaginal delivery",
+        "normal delivery"
+      ],
+      "vết mổ": [
+        "sẹo mổ",
+        "surgical scar"
+      ],
+      "triệt sản": [
+        "phẫu thuật ngừa thai vĩnh viễn",
+        "sterilization",
+        "tubal ligation"
+      ],
+      "thắt ống dẫn trứng": [
+        "cắt ống dẫn trứng",
+        "tubal ligation"
+      ],
+      "khám phụ khoa": [
+        "khám sản phụ khoa",
+        "gynecological examination"
+      ],
+      "bác sĩ sản phụ khoa": [
+        "bác sĩ phụ khoa",
+        "obstetrician-gynecologist",
+        "ob-gyn"
+      ],
+      "ngã âm đạo": [
+        "đường sinh âm đạo",
+        "vaginal canal"
+      ],
+      "mệt mỏi": [
+        "cảm giác kiệt sức",
+        "fatigue"
+      ],
+      "lo âu": [
+        "rối loạn lo âu",
+        "anxiety"
+      ],
+      "khó ngủ": [
+        "mất ngủ",
+        "insomnia"
+      ],
+      "rối loạn ăn": [
+        "rối loạn ăn uống",
+        "eating disorder"
+      ],
+      "tiểu không kiểm soát khi gắng sức": [
+        "stress urinary incontinence",
+        "sui",
+        "tiểu són khi gắng sức"
+      ],
+      "rối loạn đáy chậu": [
+        "pelvic floor disorder"
+      ],
+      "cơ vòng niệu đạo yếu": [
+        "suy cơ vòng niệu đạo",
+        "urethral sphincter weakness"
+      ],
+      "sinh theo chỉ định y khoa": [
+        "sinh mổ chỉ định",
+        "medically indicated delivery"
+      ],
+      "sinh theo ý muốn": [
+        "sinh tự chọn",
+        "elective delivery"
+      ],
+      "xét nghiệm pap": [
+        "pap smear",
+        "papanicolaou test",
+        "sàng lọc tế bào cổ tử cung"
+      ],
+      "nhiễm virút u nhú ở người": [
+        "human papillomavirus infection",
+        "hpv infection"
+      ],
+      "ung thư cổ tử cung": [
+        "ung thư tử cung",
+        "cervical cancer"
+      ],
+      "ống dẫn trứng bất thường": [
+        "tắc ống dẫn trứng",
+        "fallopian tube abnormality"
+      ],
+      "bệnh lý viêm nhiễm vùng chậu": [
+        "viêm vùng chậu",
+        "pelvic inflammatory disease",
+        "pid"
+      ],
+      "dậy thì": [
+        "tuổi dậy thì",
+        "puberty",
+        "giai đoạn dậy thì"
+      ],
+      "mụn trứng cá": [
+        "mụn",
+        "acne"
+      ],
+      "tinh hoàn": [
+        "testis",
+        "testicle"
+      ],
+      "lông mu": [
+        "lông vùng kín",
+        "pubic hair"
+      ],
+      "lông nách": [
+        "lông dưới cánh tay",
+        "axillary hair"
+      ],
+      "mãn kinh": [
+        "ngừng kinh nguyệt",
+        "menopause",
+        "hết kinh",
+        "thời kỳ mãn kinh"
+      ],
+      "tiền mãn kinh": [
+        "giai đoạn tiền mãn kinh",
+        "perimenopause"
+      ],
+      "buồng trứng": [
+        "ovary"
+      ],
+      "estrogen": [
+        "hormone estrogen"
+      ],
+      "xuất huyết tử cung bất thường": [
+        "chảy máu tử cung bất thường",
+        "abnormal uterine bleeding"
+      ],
+      "nội soi buồng tử cung": [
+        "nội soi tử cung",
+        "hysteroscopy"
+      ],
+      "phẫu thuật nội soi ổ bụng": [
+        "phẫu thuật nội soi bụng",
+        "laparoscopic surgery"
+      ],
+      "nong cổ tử cung": [
+        "mở rộng cổ tử cung",
+        "cervical dilation"
+      ],
+      "nạo lòng tử cung": [
+        "nạo tử cung",
+        "endometrial curettage",
+        "d&c"
+      ],
+      "tiểu không tự chủ": [
+        "rò rỉ nước tiểu",
+        "tiểu són",
+        "urinary incontinence"
+      ],
+      "buồn tiểu": [
+        "cảm giác muốn đi tiểu",
+        "tiểu gấp",
+        "urge to urinate"
+      ],
+      "thai quá ngày dự sinh": [
+        "thai kỳ kéo dài",
+        "sinh muộn",
+        "post-term pregnancy"
+      ],
+      "ngày sinh dự kiến": [
+        "ngày dự sinh",
+        "ngày sinh ước tính",
+        "estimated due date (edd)"
+      ],
+      "ốm nghén": [
+        "buồn nôn khi mang thai",
+        "buồn nôn thai kỳ",
+        "nôn nghén",
+        "morning sickness"
+      ],
+      "hormones": [
+        "chất điều tiết sinh học",
+        "nội tiết tố",
+        "hormones"
+      ],
+      "chứng ốm nghén nặng": [
+        "nôn nghén nghiêm trọng",
+        "hyperemesis gravidarum",
+        "hyperemesis gravidarum"
+      ],
+      "ra máu tiền mãn kinh": [
+        "chảy máu trước mãn kinh",
+        "chảy máu tiền kỳ mãn kinh",
+        "perimenopausal bleeding"
+      ],
+      "ra máu sau mãn kinh": [
+        "chảy máu hậu mãn kinh",
+        "chảy máu sau khi mãn kinh",
+        "postmenopausal bleeding"
+      ],
+      "chu kỳ kinh nguyệt": [
+        "chu kỳ kinh",
+        "kỳ kinh",
+        "menstrual cycle"
+      ],
+      "suy yếu cơ sàn chậu": [
+        "suy giảm cơ vùng chậu",
+        "yếu cơ vùng chậu",
+        "pelvic floor muscle weakness"
+      ],
+      "tiểu không tự chủ do áp lực": [
+        "tiểu són do áp lực",
+        "tiểu không kiểm soát khi ho",
+        "stress urinary incontinence"
+      ],
+      "sinh muộn": [
+        "sinh quá ngày",
+        "sinh sau ngày dự sinh",
+        "late-term birth"
+      ],
+      "viêm gan b": [
+        "viêm gan siêu vi b",
+        "hbv",
+        "hepatitis b"
+      ],
+      "viêm gan c": [
+        "viêm gan siêu vi c",
+        "hcv",
+        "hepatitis c"
+      ],
+      "âm hộ": [
+        "vùng âm hộ",
+        "vulva",
+        "bộ phận sinh dục ngoài nữ"
+      ],
+      "môi lớn": [
+        "nếp gấp ngoài âm hộ",
+        "labia majora"
+      ],
+      "môi bé": [
+        "nếp gấp trong âm hộ",
+        "labia minora"
+      ],
+      "dịch tiết âm đạo": [
+        "dịch âm đạo",
+        "vaginal discharge"
+      ],
+      "sinh thiết": [
+        "lấy mẫu mô",
+        "biopsy"
+      ],
+      "xét nghiệm thai kỳ": [
+        "xét nghiệm theo dõi thai",
+        "prenatal test"
+      ],
+      "sẩy thai sớm": [
+        "mất thai trước 20 tuần",
+        "early miscarriage"
+      ],
+      "nhiễm sắc thể": [
+        "chromosome"
+      ],
+      "sàn chậu": [
+        "vùng chậu",
+        "pelvic floor"
+      ],
+      "sa cơ quan vùng chậu": [
+        "sa tạng vùng chậu",
+        "pelvic organ prolapse"
+      ],
+      "giới tính": [
+        "sex",
+        "gender",
+        "biological sex"
+      ],
+      "có thai": [
+        "mang thai",
+        "thụ thai",
+        "pregnancy"
+      ],
+      "đồng tính": [
+        "đồng tính luyến ái",
+        "homosexuality",
+        "gay/lesbian"
+      ],
+      "quấy rối tình dục": [
+        "harassment tình dục",
+        "sexual harassment"
+      ],
+      "bắt nạt tình dục": [
+        "bạo lực tình dục",
+        "sexual bullying"
+      ],
+      "hoạt động tình dục": [
+        "quan hệ tình dục",
+        "giao hợp",
+        "sexual intercourse"
+      ],
+      "bệnh lây qua đường tình dục": [
+        "bệnh truyền nhiễm qua đường tình dục",
+        "stds",
+        "sexually transmitted diseases"
+      ],
+      "trinh trắng": [
+        "chưa quan hệ tình dục",
+        "virginity"
+      ],
+      "giải phẫu học": [
+        "anatomy",
+        "cấu trúc cơ thể"
+      ],
+      "tính dục": [
+        "sexual attraction",
+        "sexuality"
+      ],
+      "thai nghén": [
+        "pregnancy",
+        "gestation"
+      ],
+      "sức khỏe tâm thần": [
+        "mental health",
+        "tâm thần học"
+      ],
+      "âm đạo": [
+        "vagina",
+        "cơ quan sinh dục nữ"
+      ],
+      "quan hệ tình dục an toàn": [
+        "safe sex",
+        "tình dục an toàn"
+      ],
+      "gnrh": [
+        "gonadotropin-releasing hormone",
+        "hormon giải phóng gonadotropin"
+      ],
+      "đau âm hộ mãn tính": [
+        "đau âm hộ kéo dài",
+        "đau âm hộ tái phát",
+        "chronic vulvar pain"
+      ],
+      "trẻ sinh đủ tháng": [
+        "trẻ đủ tháng",
+        "full-term infant"
+      ],
+      "phòng chăm sóc sơ sinh tích cực": [
+        "neonatal intensive care unit",
+        "nicu",
+        "phòng chăm sóc đặc biệt sơ sinh"
+      ],
+      "thuốc tránh thai khẩn cấp": [
+        "viên tránh thai sáng hôm sau",
+        "emergency contraceptive pill",
+        "ecp"
+      ],
+      "màng ngăn âm đạo": [
+        "màng ngăn tránh thai",
+        "vaginal diaphragm"
+      ],
+      "chất diệt tinh trùng": [
+        "kem diệt tinh trùng",
+        "spermicide"
+      ],
+      "thắt ống dẫn tinh": [
+        "phẫu thuật thắt ống dẫn tinh",
+        "vasectomy"
+      ],
+      "ống dẫn tinh": [
+        "ống dẫn tinh trùng",
+        "vas deferens"
+      ],
+      "áp lực đồng lứa": [
+        "áp lực bạn bè",
+        "peer pressure"
+      ],
+      "căng thẳng": [
+        "stress",
+        "áp lực tâm lý",
+        "psychological stress"
+      ],
+      "thiếu niên": [
+        "tuổi vị thành niên",
+        "adolescent"
+      ],
+      "ngoại hình": [
+        "appearance",
+        "dáng vẻ",
+        "physical appearance"
+      ],
+      "mối quan hệ ngược đãi": [
+        "mối quan hệ lạm dụng",
+        "relationship abuse",
+        "abusive relationship"
+      ],
+      "lạm dụng thể chất": [
+        "bạo lực thể chất",
+        "physical abuse"
+      ],
+      "lạm dụng cảm xúc": [
+        "bạo lực tinh thần",
+        "emotional abuse"
+      ],
+      "lạm dụng tình dục": [
+        "bạo lực tình dục",
+        "sexual abuse"
+      ],
+      "bạo lực": [
+        "violence",
+        "hành hung"
+      ],
+      "răng miệng": [
+        "sức khỏe răng miệng",
+        "oral health"
+      ],
+      "mang thai": [
+        "thai kỳ",
+        "pregnancy"
+      ],
+      "hoạt động thể chất": [
+        "tập thể dục",
+        "physical activity"
+      ],
+      "sức khỏe": [
+        "health",
+        "tình trạng sức khỏe"
+      ],
+      "ăn thực phẩm tốt cho sức khỏe": [
+        "dinh dưỡng hợp lý",
+        "healthy eating"
+      ],
+      "đối phó với căng thẳng": [
+        "quản lý stress",
+        "stress management"
+      ],
+      "chiều dài đầu mông": [
+        "crl (crown-rump length)",
+        "chiều dài đầu đến mông",
+        "crown-rump length"
+      ],
+      "đai an toàn": [
+        "dây an toàn",
+        "seat belt"
+      ],
+      "túi khí": [
+        "airbag",
+        "túi khí an toàn"
+      ],
+      "xét nghiệm bộ ba": [
+        "triple test",
+        "xét nghiệm sàng lọc ba chỉ số",
+        "triple test"
+      ],
+      "alpha-fetoprotein": [
+        "afp",
+        "alpha fp"
+      ],
+      "human chorionic gonadotropin": [
+        "hcg",
+        "hormone thai kỳ"
+      ],
+      "estriol": [
+        "e3",
+        "hormone estrogen thai kỳ"
+      ],
+      "chụp x quang": [
+        "x-ray",
+        "chụp tia x"
+      ],
+      "ung thư máu": [
+        "bệnh bạch cầu",
+        "leukemia"
+      ]
+    }
+  }
+}
